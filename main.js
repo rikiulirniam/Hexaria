@@ -25,7 +25,7 @@ playButton.addEventListener("click", (e) => {
   localStorage.setItem("username", userInput.value);
   localStorage.setItem("botname", botInput.value);
 
-  document.querySelector("#game").style.display = "flex";
+  document.querySelector("#game_screen").style.display = "flex";
   document.querySelector("#welcome_screen").style.display = "none";
 });
 function initGame() {}
