@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexaria</title>
+    <link
+      rel="shortcut icon"
+      href="logo.png"
+      width="300"
+      height="300"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="welcome_screen">
+        <div class="game_instruction">
+          <button class="instruction_button">Game Instruction</button>
+          <div class="instruction">
+            <ol>
+              <li>Fill your name and bot name.</li>
+              <li>Click start button.</li>
+              <li>Click empty hexagon to get point.</li>
+              <li>If your point bigger than enemy you'll get their hexagon.</li>
+              <li>Play until there's no empty hexagon left.</li>
+              <li>Player with higher point win the game.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="fill_username">
+          <div id="game_logo">
+            <img src="./logo.png" alt="" />
+          </div>
+          <div class="fillname">
+            <label for="username">Your name</label>
+            <input id="username" type="text" oninput="disabling()" />
+          </div>
+          <div class="fillname">
+            <label for="botname">Bot name</label>
+            <input id="botname" type="text" oninput="disabling()" />
+          </div>
+          <div id="play_button">
+            <button class="play_button" disabled>Start Game</button>
+          </div>
+        </div>
+      </div>
+      <div id="game_screen">
+        <div class="game">
+          <div class="board"></div>
+          <div class="score"></div>
+        </div>
+        <div class="leaderboard">
+          <h1>Leaderboard</h1>
+          <div class="history_board">
+            <ul>
+              <li>
+                <h2>Riki vs Bot</h2>
+                <h3>999 - 0</h3>
+              </li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+              <li>Riki vs Bot</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

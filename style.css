@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  /* border: greenyellow solid 1px; */
+}
+
+body {
+  background-color: black;
+}
+
+.wrapper {
+  /* background-color: white; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome_screen,
+#game_screen {
+  width: 80%;
+  height: 80%;
+  /* border: 1px solid white; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.game_instruction {
+  width: 30%;
+  /* height: 20%; */
+}
+.instruction_button {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  width: 100%;
+  /* height: 100%; */
+  font-size: 1.5em;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.instruction {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  padding: 0.4em 1.5em;
+  font-size: 1.5em;
+  border: 3px solid white;
+  display: none;
+  animation: insc 500ms ease;
+}
+.animated_insc {
+  display: block;
+  animation: insc 500ms ease;
+}
+
+@keyframes insc {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+#game_logo {
+  padding: 1em 0;
+}
+
+.fill_username {
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fill_username > #play_button {
+  align-self: end;
+}
+#play_button > button {
+  background: transparent;
+  padding: 0.5em 1em;
+  border: 2px solid white;
+}
+
+.fillname {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fillname > label {
+  padding: 1em;
+}
+
+.fillname > input {
+  background: transparent;
+  border: 2px solid white;
+  padding: 0.5em;
+  margin: 8px 0;
+}
+
+#game_screen {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+.game {
+  width: 70%;
+  height: 100%;
+  border: 1px solid white;
+}
+.leaderboard {
+  width: 30%;
+  height: 100%;
+  border: 1px solid white;
+}
+.leaderboard > h1 {
+  text-align: center;
+  padding: 1em;
+  border: 1px solid white;
+}
+.leaderboard > .history_board {
+  padding: 1em 2em;
+}
+.leaderboard > .history_board > ul > li {
+  padding: 0.5em;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
